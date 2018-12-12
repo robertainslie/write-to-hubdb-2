@@ -1,6 +1,6 @@
 # Submit Data to HubDB Table
 
-##Steps to utilize
+## Steps to utilize
 1. After forking, create a .env file to store your key=value pairs of sensitive keys, including HubID, HAPI key, HubDB table ID, etc
 2. Define the HubDB table fields in the /update-row route (the HubDB API uses numeric column values)
 3. Create a HubSpot Workflow that fires a webhook to your app endpoint ({base_url}/update-row) - likely using the starting criteria of "Form submission | [choose form]" - allow for HS Workflow re-enrollment
